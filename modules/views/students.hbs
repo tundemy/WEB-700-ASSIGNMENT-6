@@ -1,0 +1,48 @@
+<div class="row">
+    <div class="col-md-12">
+        <br>
+        <h2>Students<a href="/students/add" class="btn btn-success float-right">Add New Student</a></h2>
+        <hr />
+
+        <p>            
+            <div class="table-responsive">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Student Num</th>
+                            <th>Full Name</th>
+                            <th>Email</th>
+                            <th>Address</th>
+                            <th>Status</th>
+                            <th>Course ID</th>
+                            <th></th>
+					    </tr>
+                    </thead>
+                    
+                    <tbody>
+                        {{#each students}}
+                        <tr>
+                            <td>{{studentNum}}</td>
+                            {{#studentLink studentNum}}{{firstName}} {{lastName}}{{/studentLink}}
+                            {{#mailLink}}{{email}}{{/mailLink}}
+                            <td>{{addressStreet}} {{addressCity}} {{addressProvince}}</td>
+                            <td>{{status}}</td>
+                            {{#courseLink course}}{{course}}{{/courseLink}}
+                            {{#removeStudent studentNum}}remove{{/removeStudent}}
+					    </tr>
+                        {{/each}}
+                    </tbody>
+
+                </table>
+            </div>
+            
+        </p>
+
+    </div>
+    {{#unless students}}
+    <div class="col-md-12 text-center">
+        <strong>{{message}}</strong>
+    </div>
+    {{/unless}}
+
+</div>

@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Allura&display=swap');
+
+body,html {
+    background: black; /* fallback color */
+    background: linear-gradient( to bottom, blue, black);
+    background-image: url('https://wallpapertag.com/wallpaper/full/f/1/9/118474-top-neutral-background-1920x1080-for-android-tablet.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    color: rgb(247, 6, 6);
+}
+
+.bg-light{ 
+    background-color: rgb(67, 12, 12) !important;
+    -webkit-box-shadow: 0px 1px 19px 1px rgba(0,0,0,0.68);
+    -moz-box-shadow: 0px 1px 19px 1px rgba(0,0,0,0.68);
+    box-shadow: 0px 1px 19px 1px rgba(0,0,0,0.68);
+    }
+
+
+.navbar-light .navbar-brand{
+    font-family: 'Berkshire Swash', cursive;
+    color: rgb(12, 12, 21) !important;
+    text-shadow: 0px 1px 2px rgb(0, 0, 0);
+    transition: 0.5s;
+}
+
+.navbar-light .navbar-brand:hover{
+    color: white !important;
+    transition: 0.5s;
+    transform: scale(1.06);
+}
+
+
+a.nav-link{
+    font-family: serif;
+    color: rgb(84, 69, 69) !important;
+}
+
+a.nav-link:hover{
+    color: rgb(36, 36, 40) !important;
+    text-shadow: 0px 0px 0px rgb(19, 19, 32);
+}
+
+.nav-item.active{
+    text-shadow: 1px 1px 5px rgb(28, 25, 25);
+}
+
+
+table.table tr:nth-child(odd) td{
+    background-color: rgba(43, 43, 243, 0.5);
+    border: 1px solid white;
+  }
+
+table.table tr:nth-child(even) td{
+    background-color: rgb(59, 59, 59, 0.5);
+    border: 1px solid white;
+  }
+
+table.table th{
+    background-color: rgba(119, 119, 119, 0.541);
+    color: white;
+    border: 1px solid white;
+  }
+
+  
+.table{
+      color: white;
+      border: 1px solid white;
+  }
+
+  
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Courgette', cursive;
+    color: rgb(148, 148, 243);
+    text-shadow: 0px 1px 2px black;
+  }
+  
+a{
+    color: hwb(106 3% 1%);
+  }
+
+a:hover{
+    color: brown;
+  }
+
+
+img{
+    transition: 0.5s;
+    border-radius: 8px;
+    padding: 3px 3px 3px 3px;
+}
+
+
+img:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+}  
+
+
+video{
+    border-radius: 8px;
+}
+
+
+input.btn-primary{
+    background-color: rgb(44, 44, 248);
+    color: white;
+    -webkit-box-shadow: 0px 1px 24px 9px rgba(0,0,0,0.77);
+    -moz-box-shadow: 0px 1px 24px 9px rgba(0,0,0,0.77);
+    box-shadow: 0px 1px 24px 9px rgba(0,0,0,0.77);
+    border-color: transparent;
+}
+
+
+input.btn-primary:hover{
+    background-color: rgb(39, 38, 38);
+    color: rgb(44, 44, 248);
+    -webkit-box-shadow: 0px 1px 24px 9px rgba(0,0,0,0.77);
+    -moz-box-shadow: 0px 1px 24px 9px rgba(0,0,0,0.77);
+    box-shadow: 0px 1px 24px 9px rgba(0,0,0,0.77);
+    border-color: transparent;
+    }
+
+legend{
+    padding-top: 30px;
+    padding-bottom: 5px;
+    font-family: 'Allura', cursive;
+    font-weight: bold;
+    color: rgb(148, 148, 243);
+    text-shadow: 0px 1px 2px black;
+}
+
+hr{
+    background-color: rgb(5, 142, 255);
+}
